@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
 }
-.photo-item:nth-child(n + 2) {
+.photo-list__item:nth-child(n + 2) {
   margin-left: 30px;
 }
 
@@ -18,11 +18,11 @@
   padding-bottom: 0px;
 }
 
-.photo-cover-wrap {
+.photo-list__cover-wrap {
   position: relative;
 }
 
-.photo-cover-text {
+.photo-list__text {
   display: inline;
   position: absolute;
   bottom: 0;

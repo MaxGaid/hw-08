@@ -9,7 +9,7 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -17,23 +17,23 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.team-profession {
+.team__profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.team-text {
+.team__text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-list {
+.team {
   display: flex;
   justify-content: center;
 }
 
-.team-item {
+.team__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,7 +42,7 @@
     margin-left: 30px;
   }
 }
-.team-sm-link {
+.team__sm-link {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -60,15 +60,15 @@
     color: #ffffff;
   }
 }
-.team-sm-list {
+.team__sm-list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
-.team-sm-item + .team-sm-item {
+.team__sm-item + .team__sm-item {
   margin-left: 10px;
 }
 
-.team-sm-icon {
+.team__sm-icon {
   fill: currentColor;
 }

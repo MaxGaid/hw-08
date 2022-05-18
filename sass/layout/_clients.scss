@@ -1,23 +1,18 @@
-.clients-bg-logo:hover,
-.clients-bg-logo:focus {
-  border: 1px solid var(--accent-color-text);
-  color: var(--accent-color-text);
-}
-.clients-logo {
+.clients__logo {
   fill: currentColor;
 }
 .clients-cont {
   display: flex;
 }
 
-.client-list {
+.clients {
   display: flex;
 }
-.client-item + .client-item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
-.clients-link {
+.clients__link {
   padding: 16px 32px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
