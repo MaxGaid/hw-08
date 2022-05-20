@@ -106,7 +106,7 @@
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -117,7 +117,7 @@
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -126,6 +126,11 @@
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+  }
 }
 
 .about__title {
@@ -209,10 +214,11 @@
 
 .section-about {
   padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section-about {
+    margin-bottom: 0px;
     padding-top: 94px;
   }
 }
@@ -258,6 +264,15 @@
   text-align: center;
   letter-spacing: 0.03em;
   white-space: nowrap;
+}
+
+.section-photo {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-photo {
+    display: flex;
+  }
 }
 
 .section-team {
@@ -392,7 +407,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item {
     width: 50%;
     width: 210px;
@@ -862,6 +877,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
