@@ -4,13 +4,15 @@
 }
 
 .header__logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .header__logo > span {
@@ -71,7 +73,8 @@
 }
 
 .menu-list {
-  display: flex;
+  display: none;
+  /* display: flex; */
 }
 
 .menu-list__item {
@@ -83,7 +86,8 @@
 }
 
 .contact {
-  display: flex;
+  display: none;
+  /* display: flex; */
   margin-left: auto;
   padding-left: 0px;
   align-items: center;
@@ -101,18 +105,149 @@
   fill: var(--accent-color-text);
 }
 
+.menu-open-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  height: 19px;
+  margin-left: 75%;
+  margin-bottom: 8px;
+}
+
+.open-icon {
+  fill: rgb(33, 33, 33);
+}
+
+.mob-menu {
+  top: 0;
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  margin-right: 25px;
+}
+.mob-menu .container {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: auto;
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-list__link {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1, 17;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #212121;
+}
+
+.mob-contact__tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1, 17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-contact__mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1, 17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-contact__item + .mob-contact__item {
+  margin-top: 32px;
+}
+
+.mob-soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.mob-soc-list__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1, 22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-soc-list__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+
 .section-hero {
   text-align: center;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+  padding-top: 118px;
+  padding-bottom: 198px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-2x.jpg);
+  }
 }
 
 .hero-title {
