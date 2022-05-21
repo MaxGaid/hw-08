@@ -18,8 +18,22 @@
   color: #2196f3;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .footer-address {
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .footer-text {
   font-size: 14px;
@@ -47,12 +61,23 @@
   margin-bottom: 9px;
 }
 .footer-sm {
-  margin-left: 70px;
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+    display: block;
+  }
 }
 .footer-cont {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 .footer-sm-text {
   font-weight: 700;
@@ -62,6 +87,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-top: 0;
+  }
 }
 .footer-sm-link {
   width: 44px;
@@ -92,9 +125,16 @@
 .footer-sm-icon {
   fill: currentColor;
 }
-
+.footer-form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .footer-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -108,9 +148,17 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (max-width: 450px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-button {
+  margin-top: 20px;
+  width: 200px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -122,17 +170,23 @@
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  padding: 8px 29px;
-  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 10px;
-  position: relative;
-  top: 1px;
   &:hover,
   &:focus {
     background: #188ce8;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 8px 29px;
+    width: auto;
   }
 }
 
