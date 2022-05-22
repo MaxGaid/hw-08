@@ -17,6 +17,9 @@
 .filter-list__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
+    &:nth-child(4) {
+      margin-left: 0px;
+    }
   }
   &:nth-child(n + 2) {
     margin-left: 8px;
@@ -77,15 +80,19 @@
 
 .work__item {
   margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 30px) / 2);
     &:nth-child(2n) {
       margin-left: 30px;
     }
-    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - var(--margin)) / 3);
     &:nth-last-child(-n + 3) {
